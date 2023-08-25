@@ -24,20 +24,22 @@ const usersShema = new mongoose.Schema({
     },
     qual1: {
         type: String,
-        
+        required: true,
         trime: true
     },
     qual2: {
         type: String,
-        
+        required: true,
         trime: true
     },
     status: {
         type: String,
+        required: true,
         
     },
     status2: {
         type: String,
+        required: true,
         
     },
     designation: {

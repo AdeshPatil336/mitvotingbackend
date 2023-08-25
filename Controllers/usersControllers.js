@@ -8,7 +8,7 @@ const BASE_URL = process.env.BASE_URL
 
 exports.userpost = async (req, res) => {
     const file = req.file.filename;
-    const { fname, lname, date, department, qual1, qual2, status,status2, designation, experience, cctc, ectc,
+    const { fname, lname, date, department, qual1, qual2, status, status2, designation, experience, cctc, ectc,
         period, industry, email, mobile, almobile, gender, location, resume } = req.body;
 
     if (!fname || !lname || !date || !department || !qual1 || !qual2 || !status
@@ -167,7 +167,7 @@ exports.userExport = async (req, res) => {
                 fs.mkdirSync("public/files/")
             }
             if (!fs.existsSync("public/files/export")) {
-                fs.mkdirSync("./public/files/export")
+                fs.mkdirSync("./public/files/export/")
             }
 
         }
@@ -178,7 +178,7 @@ exports.userExport = async (req, res) => {
 
         writablestream.on("finish", function () {
             res.json({
-                downloadUrl: `${ BASE_URL }/files/export/users.csv`
+                downloadUrl: `${BASE_URL}/files/export/users.csv`
             })
         });
 
