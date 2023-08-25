@@ -164,7 +164,7 @@ exports.userExport = async (req, res) => {
 
         if (!fs.existsSync("public/files/export")) {
             if (!fs.existsSync("public/files")) {
-                fs.mkdirSync("public/files/")
+                fs.mkdirSync("public/files")
             }
             if (!fs.existsSync("public/files/export")) {
                 fs.mkdirSync("./public/files/export")
