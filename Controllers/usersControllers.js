@@ -178,7 +178,7 @@ exports.userExport = async (req, res) => {
 
         writablestream.on("finish", function () {
             res.json({
-                downloadUrl: `${BASE_URL}/files/export/users.csv`
+                downloadUrl: `${ BASE_URL }/files/export/users.csv`
             })
         });
 
