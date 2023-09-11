@@ -10,7 +10,6 @@
     let loggedInUserId = null;
     let renderUserId = null
     let dean_id  = null;
-    let RegisterduserId = null;
     //register user
     exports.userpost = async (req, res) => {
         const file = req.file.filename;
@@ -22,20 +21,24 @@
 
         try {
             const peruser = await users.findOne({ email: email });
-            if (peruser) {
-                res.status(401).json("This user already exist in our database")
-            } else {
-                const datecreated = moment(new Date()).format("YYYY-MM-DD hh:mm:ss")
+              
+            if (!peruser) {
                 const userData = new users({
-                    fname, lname, bdate, dept, email, mobile, prn, password, profile: file, datecreated
+                    fname, lname, bdate, dept, email, mobile, prn, password, profile: file
                 });
                 await userData.save();
-                RegisterduserId = peruser._id;
                 res.status(200).json(userData);
-
+                
+               
+                
+            } 
+            else {
+                
+                res.status(401).json("This user already exist in our database");
             }
 
-        } catch (error) {
+        } 
+        catch (error) {
             res.status(401).json(error);
             console.log("catch block error")
 

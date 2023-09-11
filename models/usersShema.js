@@ -61,9 +61,8 @@ const usersShema = new mongoose.Schema({
           },
           post: String, 
         },
-      ],
-    datecreated: Date,
-    dateUpdated: Date
+      ]
+    
 });
 
 
