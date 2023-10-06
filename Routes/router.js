@@ -24,6 +24,10 @@ router.delete("/user/delete/:id",controllers.userdelete);
 router.put("/user/status/:id",controllers.userstatus);
 
 router.get("/userexport",controllers.userExport);
+router.get("/nomineeexport",controllers.nomineeExport);
+router.get("/winnerexport",controllers.winnerExport);
+
+
 
 
 // Routes for nominee management

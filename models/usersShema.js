@@ -59,7 +59,9 @@ const usersShema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "nominees", 
           },
-          post: String, 
+          post: String,
+          fname: String,  // Add these fields to store nominee information
+          lname: String,
         },
       ]
     
