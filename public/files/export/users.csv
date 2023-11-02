@@ -1,2 +1,4 @@
 FirstName,LastName,BirthDate,Department,Email,Mobile,PRN,Voting_Status,Voted_Nominees
-Adesh,Patil,01-Mar-2002,School of Electrical,adesh.patil@mitaoe.ac.in,9146527558,0120200335,Voted To,"Tishna Waghmare, Priyanka Mehra"
+Adesh,Patil,01-Mar-2002,School of Electrical,adesh.patil@mitaoe.ac.in,9146527558,0120200335,Voted To,veena pradhan
+Harshita,Dhanrale,30-Sep-2002,School of Electrical,harshita.dhanrale@mitaoe.ac.in,8485031468,0120200478,Not Voted,-
+Vaishnavi,Kalamkar,10-Oct-2002,School of Electrical,vaishnavi.kalamkar@mitaoe.ac.in,7620395901,0120200449,Not Voted,-
